@@ -1,6 +1,7 @@
 // Variables to reduce manual rule definition repetition
-$color-style: #00AEEF;
+$color-style: #27AAE1;
 $font-size: 15pt;
+$font-family: Helvetica, "serif", "sans-serif";
 
 // Mixins to reduce css block repetition
 @mixin border-style {
@@ -9,26 +10,41 @@ $font-size: 15pt;
     font-size: $font-size;
 }
 
+
 .form-card {
     border-radius: 20px;
-    margin: 5% auto;
-    background-color: rgba(205, 203, 203, 0.5);
+    background-color: rgba(239, 234, 234, 0.794);
     width: 100%;
     max-width: 574px;
     margin-left: auto;
     margin-right: auto;
-    box-sizing: border-box;
 
     .logo {
         padding-top: 55px;
-        text-align: center;
         margin-bottom: 85px;
+
+        img {
+            width: 194px;
+            height: 69.36px;
+            margin-right: auto;
+            margin-left: auto;
+        }
     }
 
     span {
-        margin-left: 63px;
         color: $color-style;
         font-size: $font-size;
+        font-family: $font-family;
+    }
+
+    .account-login {
+        margin-left: 63px;
+    }
+
+    .forgot-password {
+        text-align: right;
+        margin: 12px 66px 10px 0;
+        cursor: pointer;
     }
 
     .form-group {
@@ -39,6 +55,7 @@ $font-size: 15pt;
             padding: 10px;
             width: 78%;
             box-sizing: border-box;
+            font-family: $font-family;
             @include border-style;
         }
     }
@@ -47,9 +64,9 @@ $font-size: 15pt;
         padding-bottom: 114px;
 
         button {
-            margin-top: 56px;
             width: 78%;
             color: #fff;
+            font-family: $font-family;
             background-color: $color-style;
             padding: 10px;
             box-sizing: border-box;
@@ -57,4 +74,5 @@ $font-size: 15pt;
         }
     }
 }
+
 
