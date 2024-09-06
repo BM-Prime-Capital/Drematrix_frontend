@@ -1,33 +1,59 @@
+// Variables to reduce manual rule definition repetition
+$color-style: #00AEEF;
+$font-size: 15pt;
 
+// Mixins to reduce css block repetition
+@mixin border-style {
+    border: none;
+    border-radius: 30px;
+    font-size: $font-size;
+}
 
 .form-card {
-    padding-top: 6%;
+    border-radius: 20px;
     margin: 5% auto;
-    background-color: gray;
+    background-color: rgba(205, 203, 203, 0.5);
     width: 100%;
-    max-width: 500px;
+    max-width: 574px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
 
+    .logo {
+        padding-top: 55px;
+        text-align: center;
+        margin-bottom: 85px;
+    }
+
+    span {
+        margin-left: 63px;
+        color: $color-style;
+        font-size: $font-size;
+    }
+
     .form-group {
-        margin-top: 10px;
+        margin-top: 17px;
+        text-align: center;
     
         input {
             padding: 10px;
-            width: 65%;
+            width: 78%;
             box-sizing: border-box;
+            @include border-style;
         }
     }
     
     .form-group:last-child {
+        padding-bottom: 114px;
+
         button {
-            margin-bottom: 20px;
-            width: 65%;
+            margin-top: 56px;
+            width: 78%;
             color: #fff;
-            background-color: #00AEEF;
+            background-color: $color-style;
             padding: 10px;
             box-sizing: border-box;
+            @include border-style;
         }
     }
 }
