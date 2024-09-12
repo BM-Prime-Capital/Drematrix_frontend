@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { PreLoginComponent } from './pre-login/pre-login.component';
 
 
 @Component({
@@ -8,7 +9,8 @@ import { RegistrationComponent } from './registration/registration.component';
   standalone: true,
   imports: [
     LoginComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    PreLoginComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
