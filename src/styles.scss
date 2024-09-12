@@ -23,29 +23,11 @@ $custom-theme: mat.define-light-theme((
 @tailwind components;
 @tailwind utilities;
 
-/* Mouhamed global styles */
-// html, body {
-//   height: 100%;
-//   box-sizing: border-box;
-//   background-color :  #F5F5F5;
-// }
+/* Global styles */
+html, body {
+  height: 100%;
+  box-sizing: border-box;
 
-// body {
-//   width : inherit;
-//   margin :  2% 10% 2% 10%;
-//   font-family: Roboto, "Helvetica Neue", sans-serif;
-// }
+}
 
-/* Abdou's global styles */
-html, body { 
-    height: 100%;
-}
-    
-body { 
-    margin: 0px;
-    font-family: Roboto, "Helvetica Neue", sans-serif; 
-}
-    
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
