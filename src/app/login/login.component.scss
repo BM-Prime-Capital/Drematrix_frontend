@@ -37,7 +37,7 @@ $font-family: Helvetica, "serif", "sans-serif";
         font-family: $font-family;
     }
 
-    .account-login {
+    .account-stage {
         margin-left: 63px;
     }
 
@@ -64,6 +64,7 @@ $font-family: Helvetica, "serif", "sans-serif";
         padding-bottom: 114px;
 
         button {
+            margin-top: 13px;
             width: 78%;
             color: #fff;
             font-family: $font-family;

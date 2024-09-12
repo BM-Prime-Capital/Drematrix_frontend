@@ -1,0 +1,43 @@
+@import '../login/login.component.scss';
+
+:host {
+    display: block; /* Ensures it behaves like a block-level element */
+    width: 100%;
+    height: 100%;
+}
+
+select {
+    @include border-style;
+    padding: 12px;
+    width: 78%;
+    background-color: #fff;
+    color: #a9a9a9;
+}
+
+.input-with-icon {
+    position: relative;
+    
+    .icon {
+        position: absolute;
+        left: 75px;
+        transform: translateY(20%);
+    }
+
+    .vertical-bar {
+        width: 1px;
+        height: 43px;
+        background-color: $color-style;
+        position: absolute;
+        left: 115px;
+        transform: translateY(10%);
+    }
+
+    .middle-vertical-bar {
+        width: 1px;
+        height: 43px;
+        background-color: $color-style;
+        position: absolute;
+        left: 115px;
+        transform: translateY(8%);
+    }
+}
