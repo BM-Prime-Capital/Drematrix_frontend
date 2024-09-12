@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { PreLoginComponent } from './pre-login/pre-login.component';
+import { RouterOutlet, RouterLink } from '@angular/router';
 
 
 @Component({
@@ -10,7 +11,9 @@ import { PreLoginComponent } from './pre-login/pre-login.component';
   imports: [
     LoginComponent,
     RegistrationComponent,
-    PreLoginComponent
+    PreLoginComponent,
+    RouterOutlet,
+    RouterLink
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
