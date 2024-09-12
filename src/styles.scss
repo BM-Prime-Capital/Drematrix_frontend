@@ -11,3 +11,16 @@ body {
     margin: 0px;
     font-family: Roboto, "Helvetica Neue", sans-serif; 
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mdc-text-field--outlined {
+    --mdc-outlined-text-field-container-shape: 28px;
+}
+
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+  background-color: #fff !important;
+}

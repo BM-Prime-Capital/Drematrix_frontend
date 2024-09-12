@@ -7,32 +7,32 @@
             <span>Sign up</span>
         </div>
         <div class="form-group">
-            <div class="input-with-icon">
-                <img class="icon" src="assets/icons/username.svg" width="24" height="24">
+            <mat-form-field appearance="outline" class="form-field">
+                <span matTextPrefix><img src="assets/icons/username.svg" width="24" height="24"></span>
                 <span class="vertical-bar"></span>
-                <input type="text" placeholder="Username" required>
-            </div>
+                <input matInput placeholder="Username">
+            </mat-form-field>
         </div>
         <div class="form-group">
-            <div class="input-with-icon">
-                <img class="icon" src="assets/icons/username.svg" width="24" height="24">
-                <span class="middle-vertical-bar"></span>
-                <select>
-                    <option value="" disabled selected>Role</option>
-                    <option>Teacher</option>
-                    <option>Principal</option>
-                </select>
-            </div>
+            <mat-form-field appearance="outline" class="form-field">
+                <span matTextPrefix><img src="assets/icons/username.svg" width="24" height="24"></span>
+                <span class="vertical-bar"></span>
+                <input matInput placeholder="Role">
+            </mat-form-field>
         </div>
         <div class="form-group">
-            <div class="input-with-icon">
-                <img class="icon" src="assets/icons/password.svg" width="24" height="24">
+            <mat-form-field appearance="outline" class="form-field">
+                <span matTextPrefix><img src="assets/icons/password.svg" width="24" height="24"></span>
                 <span class="vertical-bar"></span>
-                <input type="password" placeholder="Password" required>
-            </div>
+                <input matInput placeholder="Password">
+            </mat-form-field>
         </div>
         <div class="form-group">
             <button>SIGN UP</button>
+
+            <div class="login-proposal">
+                <span>Already registered? Login here</span>
+            </div>
         </div>
     </form>
 </div>    

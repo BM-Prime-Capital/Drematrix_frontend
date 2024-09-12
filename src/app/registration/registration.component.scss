@@ -13,31 +13,8 @@ select {
     background-color: #fff;
     color: #a9a9a9;
 }
-
-.input-with-icon {
-    position: relative;
-    
-    .icon {
-        position: absolute;
-        left: 75px;
-        transform: translateY(20%);
-    }
-
-    .vertical-bar {
-        width: 1px;
-        height: 43px;
-        background-color: $color-style;
-        position: absolute;
-        left: 115px;
-        transform: translateY(10%);
-    }
-
-    .middle-vertical-bar {
-        width: 1px;
-        height: 43px;
-        background-color: $color-style;
-        position: absolute;
-        left: 115px;
-        transform: translateY(8%);
-    }
+.form-field {
+    width: 75%;
+    border-radius: 30px;
 }
+
