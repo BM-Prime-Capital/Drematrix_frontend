@@ -1,1 +1,10 @@
 @import '../login/login.component.scss';
+
+:host {
+    display: block;
+    padding-top: 160px;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/assets/images/background.png);
+    background-size: cover;
+}
