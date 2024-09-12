@@ -18,3 +18,20 @@ select {
     border-radius: 30px;
 }
 
+label.input {
+    margin-top: 13px;
+    width: 80%;
+    margin-left: 55px;
+}
+
+.login-proposal {
+    margin-top: 30px;
+}
+
+.login-proposal span {
+    color: gray;
+}
+
+.login-proposal a {
+    color: $color-style;
+}
