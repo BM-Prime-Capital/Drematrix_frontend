@@ -27,11 +27,7 @@ $custom-theme: mat.define-light-theme((
 html, body {
   height: 100%;
   box-sizing: border-box;
-  background-color :  #F5F5F5;
+
 }
 
-body {
-  width : inherit;
-  margin :  2% 10% 2% 10%;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-}
+
