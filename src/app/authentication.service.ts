@@ -1,9 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { LoginResponse } from './interfaces/login';
 import { RegisterResponse } from './interfaces/register';
-import { map } from 'rxjs/operators';
+
 
 
 @Injectable({
@@ -11,20 +10,13 @@ import { map } from 'rxjs/operators';
 })
 export class AuthenticationService {
 
-  private apiUrl = 'https://dream-mast.onrender.com/api';
+  private apiUrl = 'https://dream-mast.onrender.com/api'; // To be changed later with environment variables to make it dynamic
 
   constructor(private http: HttpClient) {}
 
 
-  login(email: string, password: string): Observable<LoginResponse> {
-    return this.http.post<LoginResponse>(`${this.apiUrl}/login`, { email, password }).pipe(
-      map(response => {
-        localStorage.setItem("token", response.token);
-        return response;
-      })
-    )
-
-  }
+  // Just a function placeholder, you can override it and implement it your way
+  login(email: string, password: string): {}
 
   register(email: string, password: string): Observable<RegisterResponse> {
     return this.http.post<RegisterResponse>(`${this.apiUrl}/create`, {email, password})
