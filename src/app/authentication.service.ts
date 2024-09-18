@@ -10,7 +10,7 @@ import { RegisterResponse } from './interfaces/register';
 })
 export class AuthenticationService {
 
-  private apiUrl = 'https://dream-mast.onrender.com/api'; // To be changed later with environment variables to make it dynamic
+  private apiUrl = 'https://dream-mast.onrender.com/api'; // @TODO: To be changed later with environment variables to make it dynamic
 
   constructor(private http: HttpClient) {}
 
@@ -18,6 +18,7 @@ export class AuthenticationService {
   // Just a function placeholder, you can override it and implement it your way
   login(email: string, password: string): {}
 
+  // @TODO: In progress
   register(email: string, password: string): Observable<RegisterResponse> {
     return this.http.post<RegisterResponse>(`${this.apiUrl}/create`, {email, password})
   }
