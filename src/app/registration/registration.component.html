@@ -7,15 +7,15 @@
             <span>Sign up</span>
         </div>
         <div class="form-group">
-            <label class="input input-bordered flex items-center gap-2 rounded-full">
+            <label [ngClass]="{ 'border-color': formSubmitted && registrationForm.controls.password.invalid }" class="input input-bordered flex items-center gap-2 rounded-full">
                 <object type="image/svg+xml" data="assets/icons/username.svg"></object>
-                <input type="text" placeholder="Username" formControlName="email" required/>
+                <input type="text" placeholder="Username" formControlName="email"/>
             </label>
         </div>
         <div class="form-group">
             <label class="input input-bordered flex items-center gap-2 rounded-full">
                 <object type="image/svg+xml" data="assets/icons/username.svg"></object>
-                <select class="select w-full bg-transparent border-none focus:ring-0 focus:outline-none" required>
+                <select class="select w-full bg-transparent border-none focus:ring-0 focus:outline-none">
                     <option value="" selected disabled>Role</option>
                     <option>Teacher</option>
                     <option>Principal</option>
@@ -23,9 +23,9 @@
             </label>
         </div>
         <div class="form-group">
-            <label class="input input-bordered flex items-center gap-2 rounded-full">
+            <label [ngClass]="{ 'border-color': formSubmitted && registrationForm.controls.password.invalid }" class="input input-bordered flex items-center gap-2 rounded-full">
                 <object type="image/svg+xml" data="assets/icons/password.svg"></object>
-                <input type="password" placeholder="Password" formControlName="password" required />
+                <input type="password" placeholder="Password" formControlName="password"/>
             </label>
         </div>
         <div class="form-group">
