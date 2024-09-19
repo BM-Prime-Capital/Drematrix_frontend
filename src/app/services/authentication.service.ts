@@ -2,9 +2,9 @@ import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';  // Import tap to handle side effects
-import { RegisterResponse } from './interfaces/register';
-import { LoginResponse } from "./interfaces/login";
-import { User } from "./models/User";
+import { RegisterResponse } from '../interfaces/register';
+import { LoginResponse } from "../interfaces/login";
+import { User } from "../models/User";
 
 @Injectable({
   providedIn: 'root'
