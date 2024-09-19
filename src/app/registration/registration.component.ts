@@ -49,11 +49,13 @@ export class RegistrationComponent {
         },
         error: (error) => {
           if (error.status === 400) {
-            console.log("Error object", error);
-            console.log("Error body", error.error);
-            console.log("Error key", error.error?.email)
-            const message = error.error?.email[0];
-            this.toastService.showErrorMessage(message);
+            let errorMessage;
+            const errorBody = error.error;
+            const emailError = errorBody?.email;
+            if (Array.isArray(emailError)) {
+              errorMessage = emailError[0];
+            }
+            this.toastService.showErrorMessage(errorMessage.replace("admin", "User"));
           }
         }
       })
