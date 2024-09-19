@@ -30,7 +30,6 @@ export class LoginComponent {
         next: (response) =>{
           console.log('Login successful, token:', response.token);
           // You can store the token, like in localStorage
-          localStorage.setItem('token', response.token);
           this.router.navigate(['/home']);
         },
         error : (err)=>{

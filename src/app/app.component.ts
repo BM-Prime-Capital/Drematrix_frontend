@@ -17,7 +17,8 @@ import {HttpClientModule} from "@angular/common/http";
     RouterOutlet,
     RouterLink,
     DashboardModule,
-    HttpClientModule
+    HttpClientModule,
+
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
