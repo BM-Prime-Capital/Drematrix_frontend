@@ -2,7 +2,8 @@
     <div class="logo">
         <img src="assets/images/logo.png" alt="dreametrix logo">
     </div>
-    <form (ngSubmit)="onSubmit(loginForm)" #loginForm="ngForm">
+    <app-loader [isLoading]="isLoading"></app-loader>
+    <form class="login-page" (ngSubmit)="onSubmit(loginForm)" #loginForm="ngForm">
         <div class="account-stage">
             <span>Midland School Login</span>
         </div>

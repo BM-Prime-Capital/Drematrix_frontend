@@ -28,6 +28,19 @@ $font-family: Helvetica, "serif", "sans-serif";
     margin-left: auto;
     margin-right: auto;
 
+
+    .login-page {
+        position: relative;
+    }
+    
+    app-loader {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        z-index: 100;
+    }
+
+
     .logo {
         padding-top: 55px;
         margin-bottom: 85px;
