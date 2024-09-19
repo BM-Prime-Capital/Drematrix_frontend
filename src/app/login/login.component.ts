@@ -37,6 +37,7 @@ export class LoginComponent {
         }
       }
     );
+    loginForm.reset();
   }
 
 }
