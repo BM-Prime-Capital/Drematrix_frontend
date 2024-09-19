@@ -1,15 +1,14 @@
-@if (toastService.showSuccess) {
-    <div class="toast toast-top toast-end">
-        <div class="alert alert-success">
-          <span>{{ toastService.message }}</span>
-        </div>
-    </div>
-}
 
-@if (toastService.showError) {
-  <div class="toast toast-top toast-end">
-    <div class="alert alert-danger">
+<div *ngIf="toastService.showSuccess" class="toast toast-top toast-end">
+    <div class="alert alert-success">
         <span>{{ toastService.message }}</span>
-      </div>
-  </div>
-}
+    </div>
+</div>
+
+
+
+<div *ngIf="toastService.showError" class="toast toast-top toast-end">
+<div class="alert alert-danger">
+    <span>{{ toastService.message }}</span>
+    </div>
+</div>
