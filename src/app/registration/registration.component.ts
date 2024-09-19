@@ -42,14 +42,16 @@ export class RegistrationComponent {
     if (this.registrationForm.valid) {
       this.authService.register(email, password).subscribe({
         next: (response) => {
-          console.log("Response", response)
+          console.log("Response", response);
           if (response.status === 201) {
             this.toastService.showSuccessMessage("Account created successfully");
           }
         },
         error: (error) => {
           if (error.status === 400) {
-            this.toastService.showErrorMessage("Account already created");
+            console.log(error, error.error, error.error.email);
+            const message = error.error?.email[0];
+            this.toastService.showErrorMessage(message);
           }
         }
       })
