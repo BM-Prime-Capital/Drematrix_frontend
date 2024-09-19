@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet, RouterLink, Router } from '@angular/router';
-import { AuthenticationService } from '../authentication.service';
+import { AuthenticationService } from '../services/authentication.service';
+import { ToastService } from '../services/toast.service';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 
@@ -22,7 +23,7 @@ export class RegistrationComponent {
     password: new FormControl("")
   })
 
-  constructor(private authService: AuthenticationService, private router: Router){}
+  constructor(private authService: AuthenticationService, private router: Router, private toastService: ToastService ){}
 
   onSubmit(): void {
     const email = this.registrationForm.value.email ?? '';
@@ -31,11 +32,13 @@ export class RegistrationComponent {
 
     this.authService.register(email, password).subscribe({
       next: (response) => {
-        console.log(response.body);
-        return "Account created successfully";
+        console.log("Response", response)
+        if (response.status === 201) {
+          this.toastService.showSuccessMessage("Account created successfully");
+        }
       },
       error: (error) => {
-        console.log(error);
+        console.log("Error", error);
         return "Encountered an issue when creating account";
       }
     })

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { PreLoginComponent } from './pre-login/pre-login.component';
+import { ToastComponent } from './toast/toast.component';
 import { RouterOutlet, RouterLink } from '@angular/router';
 import {DashboardModule} from "./layout/dashboard/dashboard.module";
 
@@ -13,6 +14,7 @@ import {DashboardModule} from "./layout/dashboard/dashboard.module";
     LoginComponent,
     RegistrationComponent,
     PreLoginComponent,
+    ToastComponent,
     RouterOutlet,
     RouterLink,
     DashboardModule
