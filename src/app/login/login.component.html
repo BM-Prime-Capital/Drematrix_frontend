@@ -2,20 +2,20 @@
     <div class="logo">
         <img src="assets/images/logo.png" alt="dreametrix logo">
     </div>
-    <form>
+    <form (ngSubmit)="onSubmit(loginForm)" #loginForm="ngForm">
         <div class="account-stage">
             <span>Midland School Login</span>
         </div>
         <div class="form-group">
             <label class="input input-bordered flex items-center gap-2 rounded-full">
                 <object type="image/svg+xml" data="assets/icons/username.svg"></object>
-                <input type="text" placeholder="Username" required/>
+                <input type="email" placeholder="email" id="email" name="email" ngModel required/>
             </label>
         </div>
         <div class="form-group">
             <label class="input input-bordered flex items-center gap-2 rounded-full">
                 <object type="image/svg+xml" data="assets/icons/password.svg"></object>
-                <input type="password" placeholder="Password" required />
+                <input type="password" placeholder="Password" id="password" name="password" ngModel required />
             </label>
         </div>
         <div class="forgot-password">
@@ -29,5 +29,4 @@
             </div>
         </div>
     </form>
-</div>    
-   
+</div>
