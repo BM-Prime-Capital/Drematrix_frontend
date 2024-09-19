@@ -2,14 +2,14 @@
     <div class="logo">
         <img src="assets/images/logo.png" alt="dreametrix logo">
     </div>
-    <form>
+    <form [formGroup]="registrationForm" (submit)="onSubmit()">
         <div class="account-stage">
             <span>Sign up</span>
         </div>
         <div class="form-group">
             <label class="input input-bordered flex items-center gap-2 rounded-full">
                 <object type="image/svg+xml" data="assets/icons/username.svg"></object>
-                <input type="text" placeholder="Username" required/>
+                <input type="text" placeholder="Username" formControlName="email" required/>
             </label>
         </div>
         <div class="form-group">
@@ -25,11 +25,11 @@
         <div class="form-group">
             <label class="input input-bordered flex items-center gap-2 rounded-full">
                 <object type="image/svg+xml" data="assets/icons/password.svg"></object>
-                <input type="password" placeholder="Password" required />
+                <input type="password" placeholder="Password" formControlName="password" required />
             </label>
         </div>
         <div class="form-group">
-            <button class="btn w-64 rounded-full">SIGN UP</button>
+            <button type="submit" class="btn w-64 rounded-full">SIGN UP</button>
 
             <div class="proposal">
                 <span>Already registered? Login <a routerLink="/login">here</a></span>
