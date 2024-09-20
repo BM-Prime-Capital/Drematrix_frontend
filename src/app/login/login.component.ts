@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet, RouterLink } from '@angular/router';
 import { AuthenticationService } from '../services/authentication.service';
+import { ToastService } from '../services/toast.service';
 import { Router } from '@angular/router';
 import {FormsModule, NgForm} from "@angular/forms";
 import { LoaderComponent } from '../loader/loader.component';
@@ -20,7 +21,7 @@ import { LoaderComponent } from '../loader/loader.component';
 })
 export class LoginComponent {
 
-  constructor(private authService: AuthenticationService, private router: Router){}
+  constructor(private authService: AuthenticationService, private router: Router, private toastService: ToastService){}
 
   isLoading : boolean = false;
 
@@ -39,6 +40,7 @@ export class LoginComponent {
         error : (err)=>{
           console.log('login failled', err)
           this.isLoading = false;
+          this.toastService.showErrorMessage("Please verify your credentials");
         }
       }
     );
