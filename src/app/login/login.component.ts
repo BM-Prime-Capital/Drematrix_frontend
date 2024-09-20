@@ -4,6 +4,7 @@ import { AuthenticationService } from '../services/authentication.service';
 import { ToastService } from '../services/toast.service';
 import { Router } from '@angular/router';
 import {FormsModule, NgForm} from "@angular/forms";
+import { CommonModule } from '@angular/common';
 import { LoaderComponent } from '../loader/loader.component';
 
 
@@ -14,6 +15,7 @@ import { LoaderComponent } from '../loader/loader.component';
     RouterOutlet,
     RouterLink,
     FormsModule,
+    CommonModule,
     LoaderComponent
   ],
   templateUrl: './login.component.html',
@@ -24,11 +26,18 @@ export class LoginComponent {
   constructor(private authService: AuthenticationService, private router: Router, private toastService: ToastService){}
 
   isLoading : boolean = false;
+  formSubmitted : boolean = false;
 
   onSubmit(loginForm: NgForm) {
     const {email, password} = loginForm.value;
     console.log(email, password)
+    this.formSubmitted = true;
     this.isLoading = true;
+    console.log("Log result", loginForm.valid)
+    if (!loginForm.valid) {
+      this.isLoading = false;
+      return
+    }
     this.authService.login(email, password).subscribe(
       {
         next: (response) =>{
