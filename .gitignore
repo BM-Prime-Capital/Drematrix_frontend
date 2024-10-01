@@ -42,5 +42,6 @@ testem.log
 Thumbs.db
 
 # Local Netlify folder
-.netlify
+.netlify/
 .vscode/
+.angular/

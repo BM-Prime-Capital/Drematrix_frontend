@@ -1,0 +1,1 @@
+export type profileType = "teacher" | "student" | "admin";
