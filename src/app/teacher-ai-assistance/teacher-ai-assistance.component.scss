@@ -3,11 +3,48 @@
     background-color: #DFECF2;
     height: 356px;
     border-radius: 20px;
-    max-width: 800px;
-    margin: 20px;
+    // max-width: 800px;
+    // margin: 20px;
 
     h3 {
         margin-left: 10%;
         margin-top: 5%;
+    }
+
+    .profile-name {
+        font-size: 22px;
+        font-weight: bold;
+        color: #4a4a4a;
+        margin-bottom: 10px;
+    }
+
+    .ai-infos {
+        margin-top: 4%;
+        margin-left: 13%;
+    }
+
+    .ai-items {
+        display: flex;
+        align-items: center;
+        margin-top: 3%;
+    }
+
+    .ai-items-name {
+        display: flex;
+        align-items: center;
+        margin-left: 8%;
+        font-weight: bold;
+    }
+
+    .name {
+        margin-right: 5px;
+    }
+
+    .ai-icon {
+        margin-right: 15px;
+    }
+
+    .important-notice {
+        font-weight: bold;
     }
 }

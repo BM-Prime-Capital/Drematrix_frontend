@@ -6,8 +6,9 @@
     background-color: white;
     height: 228px;
     border-radius: 20px;
-    max-width: 800px;
-    margin: 20px;
+    margin: 20px 0 20px 0;
+    // max-width: 800px;
+    // margin: 20px;
 }
 
 /* Profile picture styling */
@@ -15,7 +16,7 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    margin-left: 9%;
+    margin-left: 13%;
     object-fit: cover;
 }
 
@@ -29,7 +30,7 @@
 
 /* Name styling */
 .profile-name {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     color: #4a4a4a;
     margin-bottom: 10px;
