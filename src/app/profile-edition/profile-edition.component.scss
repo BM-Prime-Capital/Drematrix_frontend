@@ -38,4 +38,30 @@
         margin-left: 50px;
     }
 
+    .container {
+        max-width: 898px;
+        margin-top: 35px;
+    }
+
+    .form-group {
+        margin-top: 35px;
+    }
+    
+    #update-button {
+        margin-top: 13px;
+        width: 87%;
+        color: #fff;
+        font-family: Helvetica, "serif", "sans-serif";
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: #27AAE1;
+        border: none;
+        border-radius: 30px;
+        font-size: 15pt;
+    }
+
+    .second-grid {
+        margin-top: 40px;
+    }
+
 }

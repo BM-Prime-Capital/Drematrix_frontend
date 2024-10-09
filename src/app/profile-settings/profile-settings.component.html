@@ -1,1 +1,32 @@
-<p>profile-settings works!</p>
+<div class="profile-card">
+    <p class="settings-title">Settings</p>
+
+    <div>
+        <label>Add subjects</label>
+        <ng-multiselect-dropdown
+            [placeholder]="'custom placeholder'"
+            [settings]="dropdownSettings"
+            [data]="dropdownList"
+            [(ngModel)]="selectedItems"
+            (onSelect)="onItemSelect($event)"
+            (onSelectAll)="onSelectAll($event)"
+            />
+    </div>
+
+    <div>
+        <label>Maximum duration of feedback audio (minutes)</label>
+        <div class="flex items-center gap-2">
+            <!-- Minus button -->
+            <button class="btn btn-outline w-20">-</button>
+            <!-- Number input -->
+            <input type="number" class="input input-bordered text-center w-20" value="0" />
+            <!-- Plus button -->
+            <button class="btn btn-outline w-20">+</button>
+          </div>
+
+    </div>
+    <div class="flex flex-col items-center gap-4 mt-6">
+        <button id="update-button"  type="submit">UPDATE</button>
+        <button id="cancel-button" type="submit">Cancel</button>
+    </div>
+</div>

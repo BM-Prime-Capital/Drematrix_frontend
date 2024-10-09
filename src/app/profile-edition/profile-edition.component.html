@@ -1,4 +1,4 @@
-<div class="profile-card">
+<div class="profile-card ">
     <p class="profile-title">Profile</p>
     <div class="profile">
         <img src="assets/profil.jpg" alt="Profile Picture" class="profile-pic" />
@@ -6,12 +6,28 @@
             <p class="profile-name">Sarah Young</p>
         </div>
     </div>
-    <div>
-        <div class="form-group">
-            <label class="input input-bordered flex items-center gap-2 rounded-full">
-                <input class="w-1/2" type="text" placeholder="Username" id="username" name="email" ngModel required/>
-                <input class="w-1/2" type="text" placeholder="Email" id="email" name="email" ngModel required/>
-            </label>
-        </div>
+    <div class="container">
+        <form class="form-card">
+            <div class="grid grid-cols-2 gap-4">
+                <label class="input input-bordered form-control gap-2 rounded-full">
+                    <input type="text" placeholder="Username" id="username" name="email" ngModel required/>
+                </label>
+                <label class="input input-bordered form-control gap-2 rounded-full">
+                    <input type="text" placeholder="Email" id="email" name="email" ngModel required/>
+                </label>
+            </div>
+            <div class="grid grid-cols-2 gap-4 second-grid">
+                <label class="input input-bordered form-control gap-2 rounded-full">
+                    <input type="text" placeholder="School" id="username" name="email" ngModel required/>
+                </label>
+                <label class="input input-bordered form-control gap-2 rounded-full">
+                    <input type="text" placeholder="Role" id="email" name="email" ngModel required/>
+                </label>
+            </div>
+            <div class="flex flex-col items-center gap-4 mt-6">
+                <button id="update-button"  type="submit">UPDATE PROFILE</button>
+                <button id="cancel-button" type="submit">Cancel</button>
+            </div>
+        </form>
     </div>
 </div>

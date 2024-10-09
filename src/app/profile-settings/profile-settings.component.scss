@@ -1,0 +1,39 @@
+.profile-card {
+    padding: 20px;
+    background-color: white;
+    height: 356px;
+    border-radius: 20px;
+    // max-width: 800px;
+    // margin: 20px;
+    margin-top: 22px;
+
+    h3 {
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+
+    .settings-title {
+        font-size: 22px;
+        font-weight: bold;
+        color: #4a4a4a;
+        margin-bottom: 10px;
+        margin-left: 13%;
+    }
+
+    #update-button {
+        margin-top: 13px;
+        width: 87%;
+        color: #fff;
+        font-family: Helvetica, "serif", "sans-serif";
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: #27AAE1;
+        border: none;
+        border-radius: 30px;
+        font-size: 15pt;
+    }
+
+    .second-grid {
+        margin-top: 40px;
+    }
+}
